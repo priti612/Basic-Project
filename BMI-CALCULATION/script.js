@@ -1,19 +1,17 @@
-const form = document.querySelector('form');
+const button = document.querySelector('button');
 
-form.addEventListener('submit', function (e) {
-  e.preventDefault();
+button.addEventListener('click', function () {
 
   const height = parseInt(document.querySelector('#height').value);
   const weight = parseInt(document.querySelector('#weight').value);
   const results = document.querySelector('#results');
 
-  if (height === '' || height < 0 || isNaN(height)) {
+  if (isNaN(height) || height <= 0) {
     results.innerHTML = `please give a valid number ${height}`;
-  } else if (weight === '' || weight < 0 || isNaN(weight)) {
+  } else if (isNaN(weight) || weight <= 0) {
     results.innerHTML = `please give a valid number ${weight}`;
   } else {
     const bmi = (weight / ((height * height) / 10000)).toFixed(2);
-
     results.innerHTML = `<span>${bmi}</span>`;
   }
 });

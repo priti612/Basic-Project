@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+nav{
+    background-color: #598abc;
+    padding: 10px 20px;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap:20px
+
+}
+nav ul li{
+    display:  flex;
+    
+}
+nav ul li a{
+    color: lightpink;
+    font-weight: 500;
+    padding: 8px ;
+    text-decoration: none;
+    border-radius: 4px;
+
+}
+nav ul li a:hover{
+    background-color: #344934;
+}
+
+.container{
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    align-items: center;
+
+}
+.todo-do{
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(44, 28, 28, 0.5);
+    max-width: 400px;
+    width: 100%;
+
+}
+.btn{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2c3e50;
+    border-radius: 6px;
+}
+.btn :hover
+{
+    color: #033567;
+}
+textarea{
+    min-height: 100px;
+    resize: vertical;
+    width: 100%;
+}
+
+input{
+    width: 90%;
+    padding: 12px;
+    border: 10px solid #ccc;
+    
+}
+.task-list {
+    list-style: none;
+    padding: 0;
+    max-width: 600;   /* you missed px earlier */
+    margin: auto;
+}
+
+.task-item {
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border-left: 5px solid #4caf50;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 6px;
+}
+
+.task-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.task-discription {
+    color: #867f7f;
+}
+.delete-item{
+    margin-top: 10px;
+    padding: 6px 10px;
+    background-color: #ff4d4d;
+    color:#fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+.delete-item:hover {
+    color: dark red;
+}
+
+.update-item{
+    margin-top: 10px;
+    padding: 6px 10px;
+    background-color: #4dff4d;
+    color:#fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+.update-item:hover {
+    color: green;
+}
+
+.check-box {
+    margin-right:-1px;/* remove default spacing/margin */
+}
